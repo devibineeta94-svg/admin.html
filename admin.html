@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TCS Admin Panel</title>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+<h2>TCS Restaurant Admin Panel</h2>
+
+<input type="text" id="name" placeholder="Food Name">
+<input type="text" id="price" placeholder="Price">
+<button onclick="addItem()">Add Item</button>
+
+<ul id="list"></ul>
+
+<script>
+// PASTE YOUR FIREBASE CONFIG HERE
+
+function addItem(){
+let name=document.getElementById("name").value;
+let price=document.getElementById("price").value;
+
+alert("Item Added: "+name+" - "+price);
+}
+</script>
+
+</body>
+</html>
